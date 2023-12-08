@@ -1,0 +1,52 @@
+{
+    "supportAdministrators":false,
+    "supportVerification":false,
+    "integration":"transcribe-bot",
+    "tokens":[
+      {
+        "token": "AWS_REGION",
+        "pattern": "",
+        "type": "string",
+        "description": "Please enter the Amazon Transcribe and Amazon S3 region to use",
+        "message": "Please enter the Amazon Transcribe and Amazon S3 region to use",
+        "required": true,
+        "default": "us-east-1"
+      },
+      {
+        "token": "AWS_INPUT_BUCKET",
+        "pattern": "",
+        "type": "string",
+        "description": "Please enter the Amazon S3 bucket name that you will use for pre-transcribe storage",
+        "message": "Cannot leave empty! Please enter a value",
+        "required": true,
+        "default": "default"
+      },
+      {
+        "token": "AWS_OUTPUT_BUCKET",
+        "pattern": "",
+        "type": "string",
+        "description": "Please enter the Amazon S3 bucket name that you will use for post-transcribe storage",
+        "message": "Cannot leave empty! Please enter a value",
+        "required": true,
+        "default": "default"
+      },
+      {
+        "token": "AWS_LANGUAGE1",
+        "pattern": "",
+        "type": "string",
+        "description": "Please enter the first language code that you would like translated (codes from here https://docs.aws.amazon.com/transcribe/latest/dg/supported-languages.html)",
+        "message": "Cannot leave empty! Please enter a value",
+        "required": true,
+        "default": "default"
+      },
+      {
+        "token": "AWS_LANGUAGE2",
+        "pattern": "",
+        "type": "string",
+        "description": "Please enter the second language code that you would like translated (codes from here https://docs.aws.amazon.com/transcribe/latest/dg/supported-languages.html)",
+        "message": "Cannot leave empty! Please enter a value",
+        "required": true,
+        "default": "default"
+      }
+    ]
+}
