@@ -236,7 +236,7 @@ async function listen(rMessage) {
   var request = rMessage.file.localfilename;
   var userArr = [];
   userArr.push(sender);
-  if (request.includes('voice memo') || request.includes('VoiceMemo') || request.includes('AUDIO')) {
+  if (request.includes('voice memo') || request.includes('VoiceMemo') || request.includes('voice-memo') || request.includes('AUDIO')) {
     console.log('calling createResponse()')
     await createResponse(request, vGroupID)
   } else {
